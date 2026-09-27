@@ -1,0 +1,27 @@
+# Ignore huggingface or local model download caches
+src/data/models/
+*.bin
+*.safetensors
+#ignore large video files
+src/data/uploads/
+*.mp4
+# Environments
+.ibm
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Mac
+.DS_Store

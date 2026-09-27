@@ -1,0 +1,146 @@
+<USER_REQUEST>
+============================================================
+MASTER INSTRUCTION
+FULL AI DEEPFAKE FORENSICAI + IBM BOB LOAD-BEARING AGENT
+============================================================
+
+You are the lead software architect, AI/ML engineer, forensic-AI engineer,
+backend engineer, frontend engineer, testing engineer, and IBM Bob integration
+engineer.
+
+Your job is to BUILD the complete working project described below.
+
+Do NOT merely create a skeleton.
+Do NOT create placeholder functions.
+Do NOT create fake AI outputs.
+Do NOT use heuristic-only deepfake detection.
+Do NOT make IBM Bob a name-only/static component.
+Do NOT leave TODOs for core functionality.
+Do NOT fabricate IBM Bob API endpoints.
+Do NOT fabricate model results.
+
+The final application must run locally on Windows from the supplied project
+structure and must perform a genuine AI-powered deepfake forensic workflow.
+
+============================================================
+1. PROJECT NAME
+============================================================
+
+DeepFake ForensicAI
+
+Purpose:
+
+Build a multimodal AI forensic investigation platform that analyzes suspected
+deepfake images, videos, and audio using pretrained AI models and forensic
+evidence extraction, then sends the structured forensic evidence to IBM Bob
+through a real configurable Bob integration so Bob produces an investigation
+report.
+
+The system must combine:
+
+1. Pretrained AI deepfake detection
+2. Face detection and face-region analysis
+3. Video frame-level analysis
+4. Audio deepfake/spoof analysis
+5. Audio-video synchronization analysis
+6. Metadata analysis
+7. Compression/forensic artifact analysis
+8. Temporal consistency analysis
+9. Multimodal evidence fusion
+10. Explainable evidence generation
+11. IBM Bob forensic reporting agent
+12. Case management
+13. Evidence graph
+14. JSON/PDF forensic reports
+15. Reproducible analysis records
+
+The AI models are the primary detection mechanism.
+
+Traditional forensic/heuristic
+<truncated 49125 bytes>
+============
+69. MOST IMPORTANT ARCHITECTURAL RULE
+============================================================
+
+The project must demonstrate the following clearly:
+
+PRETRAINED AI MODELS
+        ↓
+ACTUAL MEDIA ANALYSIS
+        ↓
+MULTIMODAL FORENSIC EVIDENCE
+        ↓
+STRUCTURED EVIDENCE PACKAGE
+        ↓
+IBM BOB
+        ↓
+EVIDENCE-GROUNDED INVESTIGATION REPORT
+        ↓
+PDF / JSON / FRONTEND
+
+IBM Bob is therefore a genuine reasoning/reporting component.
+
+It is NOT:
+
+- a static file
+- a fake class
+- a comment
+- a README mention
+- a hardcoded report
+- a mock API in production
+
+============================================================
+70. FINAL INSTRUCTION TO ANTIGRAVITY
+============================================================
+
+Start by inspecting the existing repository.
+
+Do not delete working code unnecessarily.
+
+Preserve working components.
+
+Then implement the architecture above.
+
+If an existing implementation conflicts with this architecture, refactor it
+rather than creating duplicate systems.
+
+Use real pretrained AI models.
+
+Use real inference.
+
+Use real evidence.
+
+Use real IBM Bob integration.
+
+Use structured schemas.
+
+Use deterministic reproducible processing.
+
+Test every major component.
+
+At the end, provide:
+
+1. Final project tree
+2. Files created
+3. Files modified
+4. AI models used
+5. IBM Bob integration location
+6. Exact location where I put my IBM Bob API key
+7. Backend run command
+8. Frontend run command
+9. Test command
+10. Health-check command
+11. Bob status-check command
+12. End-to-end demo procedure
+13. Any dependency/version issue that remains
+14. Any known limitation
+
+DO NOT claim completion until the implementation has actually been tested.
+
+============================================================
+END OF MASTER INSTRUCTION
+============================================================
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-09-27T13:47:48+05:30.
+</ADDITIONAL_METADATA>

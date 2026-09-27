@@ -1,0 +1,33 @@
+visual_model:
+  base_architecture: "google/vit-base-patch16-224"
+  pretrained_checkpoint: "dima806/deepfake_vs_real_image_detection"
+  num_classes: 2
+  classes:
+    0: "Real"
+    1: "Fake"
+  image_size: 224
+  training:
+    learning_rate: 2.0e-5
+    weight_decay: 0.01
+    epochs: 5
+    batch_size: 32
+    gradient_accumulation_steps: 2
+    warmup_ratio: 0.1
+    fp16: false  # Set true if training on CUDA with Ampere/Hopper
+    eval_steps: 500
+    save_steps: 1000
+
+audio_model:
+  base_architecture: "facebook/wav2vec2-base"
+  pretrained_checkpoint: "MelodyMachine/Deepfake-audio-detection"
+  num_classes: 2
+  classes:
+    0: "fake"
+    1: "real"
+  sample_rate: 16000
+  training:
+    learning_rate: 1.0e-4
+    epochs: 3
+    batch_size: 16
+    warmup_steps: 200
+    eval_steps: 250

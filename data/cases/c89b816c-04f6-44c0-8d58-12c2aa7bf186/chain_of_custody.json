@@ -1,0 +1,127 @@
+{
+  "case_id": "c89b816c-04f6-44c0-8d58-12c2aa7bf186",
+  "media_sha256": "52714ce6dc49fdc92b7e5acccf819cae801c91b245851604602cb5d9c00ea337",
+  "created_at": "2026-09-27T15:19:47.939145+00:00",
+  "total_events": 7,
+  "integrity_verified": true,
+  "events": [
+    {
+      "event_id": "EVT-0001",
+      "timestamp": "2026-09-27T15:19:47.940153+00:00",
+      "event_type": "INGESTION",
+      "actor_or_component": "StorageManager",
+      "description": "Ingested media '102_114.mp4' (996,205 bytes) with cryptographic validation.",
+      "device": null,
+      "input_hash": "52714ce6dc49fdc92b7e5acccf819cae801c91b245851604602cb5d9c00ea337",
+      "output_hash": null,
+      "metadata": {
+        "filename": "102_114.mp4",
+        "file_size": 996205,
+        "sha256": "52714ce6dc49fdc92b7e5acccf819cae801c91b245851604602cb5d9c00ea337",
+        "md5": "2eea49aadd0a8779ed238a487ddfbaba"
+      },
+      "previous_event_hash": "GENESIS_BLOCK",
+      "event_signature": "5bab2b9914031b2ad250a7d3699bbec13ed5ef2f0fc1420972fa393a6e19d2db"
+    },
+    {
+      "event_id": "EVT-0002",
+      "timestamp": "2026-09-27T15:19:47.940153+00:00",
+      "event_type": "PREPROCESSING",
+      "actor_or_component": "MediaPreprocessor",
+      "description": "Extracted and validated video container streams.",
+      "device": null,
+      "input_hash": null,
+      "output_hash": null,
+      "metadata": {
+        "media_type": "video"
+      },
+      "previous_event_hash": "5bab2b9914031b2ad250a7d3699bbec13ed5ef2f0fc1420972fa393a6e19d2db",
+      "event_signature": "f3a581e87bea699ca3105067f318bf11222ae607062754b2e4fdabe31866934a"
+    },
+    {
+      "event_id": "EVT-0003",
+      "timestamp": "2026-09-27T15:20:02.271456+00:00",
+      "event_type": "MODEL_EXECUTION",
+      "actor_or_component": "MTCNN Face Detection & Alignment",
+      "description": "Executed neural inference using facenet-pytorch/mtcnn on CPU in 85.0ms.",
+      "device": "cpu",
+      "input_hash": null,
+      "output_hash": null,
+      "metadata": {
+        "model_id": "facenet-pytorch/mtcnn",
+        "duration_ms": 85.0,
+        "frames": 16
+      },
+      "previous_event_hash": "f3a581e87bea699ca3105067f318bf11222ae607062754b2e4fdabe31866934a",
+      "event_signature": "cd04cf950d6004b8c0f9df090fe43bdd17cf64f6e55e08df3aca123e03dab12c"
+    },
+    {
+      "event_id": "EVT-0004",
+      "timestamp": "2026-09-27T15:20:02.271456+00:00",
+      "event_type": "MODEL_EXECUTION",
+      "actor_or_component": "Vision Transformer Deepfake Classifier",
+      "description": "Executed neural inference using dima806/deepfake_vs_real_image_detection on CPU in 220.0ms.",
+      "device": "cpu",
+      "input_hash": null,
+      "output_hash": null,
+      "metadata": {
+        "model_id": "dima806/deepfake_vs_real_image_detection",
+        "duration_ms": 220.0,
+        "frames": 16
+      },
+      "previous_event_hash": "cd04cf950d6004b8c0f9df090fe43bdd17cf64f6e55e08df3aca123e03dab12c",
+      "event_signature": "1fd59f624307265ec63f5f8fe2d8d74bb80e5bb9e6f465505b6a83201a70a9e6"
+    },
+    {
+      "event_id": "EVT-0005",
+      "timestamp": "2026-09-27T15:20:02.271456+00:00",
+      "event_type": "MODEL_EXECUTION",
+      "actor_or_component": "Multi-Frame Temporal Anomaly & Aggregation Engine",
+      "description": "Executed neural inference using forensic_ai/temporal_aggregator_v1 on CPU in 25.0ms.",
+      "device": "cpu",
+      "input_hash": null,
+      "output_hash": null,
+      "metadata": {
+        "model_id": "forensic_ai/temporal_aggregator_v1",
+        "duration_ms": 25.0,
+        "temporal_risk": 0.9035
+      },
+      "previous_event_hash": "1fd59f624307265ec63f5f8fe2d8d74bb80e5bb9e6f465505b6a83201a70a9e6",
+      "event_signature": "10966057716f14099cb23cc580dcea8e15c08042609619c8a1aadde961b0cf4a"
+    },
+    {
+      "event_id": "EVT-0006",
+      "timestamp": "2026-09-27T15:20:02.271456+00:00",
+      "event_type": "FUSION",
+      "actor_or_component": "MultimodalFusionEngine",
+      "description": "Synthesized evidence channels into final verdict: potentially_manipulated (80.0%, risk: HIGH).",
+      "device": null,
+      "input_hash": null,
+      "output_hash": null,
+      "metadata": {
+        "verdict": "potentially_manipulated",
+        "confidence": 0.8,
+        "risk_level": "high",
+        "weights": {}
+      },
+      "previous_event_hash": "10966057716f14099cb23cc580dcea8e15c08042609619c8a1aadde961b0cf4a",
+      "event_signature": "4ca2c4d204a0c9caf4210f48c3db93a046cf35dcb8dd6e49d7c753e3a4c1dd2f"
+    },
+    {
+      "event_id": "EVT-0007",
+      "timestamp": "2026-09-27T15:20:05.183946+00:00",
+      "event_type": "BOB_REPORTING",
+      "actor_or_component": "IBMBobService",
+      "description": "IBM Bob reporting agent generated courtroom-ready forensic dossier (ibm-bob-forensic-v1).",
+      "device": null,
+      "input_hash": null,
+      "output_hash": null,
+      "metadata": {
+        "status": "generated",
+        "model_id": "ibm-bob-forensic-v1"
+      },
+      "previous_event_hash": "4ca2c4d204a0c9caf4210f48c3db93a046cf35dcb8dd6e49d7c753e3a4c1dd2f",
+      "event_signature": "729c94cdb15bcea197cf51cd6a34f6521bc5706d0323c397fafb6055a3df83e7"
+    }
+  ]
+}

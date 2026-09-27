@@ -1,0 +1,1386 @@
+{
+  "case_id": "2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+  "created_at": "2026-09-27T15:20:39.060676+00:00",
+  "filename": "101_096.mp4",
+  "media_type": "video",
+  "file_size": 2363617,
+  "status": "completed",
+  "stored_path": "C:\\Users\\Harshil Vashita\\.gemini\\antigravity\\scratch\\ForensicAI\\data\\uploads\\2315589e-e1a7-4ace-bc38-7a07b5476ff6_20617be9.mp4",
+  "risk_level": "low",
+  "prediction_label": "authentic",
+  "confidence": 0.8,
+  "analysis_result": {
+    "case_id": "2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+    "media": {
+      "filename": "101_096.mp4",
+      "type": "video",
+      "media_type": "video",
+      "size_bytes": 2363617,
+      "sha256": "0bb352cec15ada863b79a89566b5338a875f3d329751e2bf54ba766c4d81418b",
+      "md5": "6d38383459b71bd853b1318f2514ce2f"
+    },
+    "prediction": {
+      "label": "authentic",
+      "confidence": 0.8,
+      "risk_level": "low"
+    },
+    "scores": {
+      "visual": 0.3084,
+      "audio": 0.0,
+      "metadata": 0.02,
+      "temporal": 0.3084,
+      "fusion": 0.2956
+    },
+    "metadata": {
+      "file_name": "2315589e-e1a7-4ace-bc38-7a07b5476ff6_20617be9.mp4",
+      "file_size_bytes": 2363617,
+      "file_size_mb": 2.25,
+      "media_type": "video",
+      "sha256": "0bb352cec15ada863b79a89566b5338a875f3d329751e2bf54ba766c4d81418b",
+      "md5": "6d38383459b71bd853b1318f2514ce2f",
+      "exif_present": false,
+      "software_signature": null,
+      "editing_software_detected": false,
+      "camera_make": null,
+      "camera_model": null,
+      "creation_date": null,
+      "tags": {}
+    },
+    "faces": {
+      "count": 0,
+      "face_count": 0,
+      "items": []
+    },
+    "audio": {},
+    "visual": {},
+    "temporal": {
+      "temporal_risk_score": 0.3084,
+      "mean_fake_probability": 0.071,
+      "peak_fake_probability": 0.9814,
+      "variance": 0.0339,
+      "inter_frame_jitter": 0.1219,
+      "peak_frame_index": 540,
+      "suspicious_frame_indices": [
+        540
+      ],
+      "confidence": 0.6916,
+      "predicted_label": "REAL",
+      "model_name": "Multi-Frame Temporal Anomaly & Aggregation Engine",
+      "model_id": "forensic_ai/temporal_aggregator_v1",
+      "model_version": "1.0.0",
+      "fake_probability": 0.3084
+    },
+    "sync_analysis": {
+      "available": false,
+      "status": "no_audio",
+      "sync_score": 1.0,
+      "desync_risk": 0.0,
+      "correlation": 0.0,
+      "is_supporting_signal": true,
+      "evidence_label": "Synchronization evidence: supporting signal",
+      "finding_summary": "Video contains no extracted audio track; synchronization analysis skipped."
+    },
+    "chain_of_custody": {
+      "case_id": "2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+      "media_sha256": "0bb352cec15ada863b79a89566b5338a875f3d329751e2bf54ba766c4d81418b",
+      "created_at": "2026-09-27T15:20:39.128822+00:00",
+      "total_events": 7,
+      "integrity_verified": true,
+      "events": [
+        {
+          "event_id": "EVT-0001",
+          "timestamp": "2026-09-27T15:20:39.128822+00:00",
+          "event_type": "INGESTION",
+          "actor_or_component": "StorageManager",
+          "description": "Ingested media '101_096.mp4' (2,363,617 bytes) with cryptographic validation.",
+          "device": null,
+          "input_hash": "0bb352cec15ada863b79a89566b5338a875f3d329751e2bf54ba766c4d81418b",
+          "output_hash": null,
+          "metadata": {
+            "filename": "101_096.mp4",
+            "file_size": 2363617,
+            "sha256": "0bb352cec15ada863b79a89566b5338a875f3d329751e2bf54ba766c4d81418b",
+            "md5": "6d38383459b71bd853b1318f2514ce2f"
+          },
+          "previous_event_hash": "GENESIS_BLOCK",
+          "event_signature": "bff2a76c035b9f7c911b9a3ef08ce67bfcd73a26478682a0a700ba46dfd5a98c"
+        },
+        {
+          "event_id": "EVT-0002",
+          "timestamp": "2026-09-27T15:20:39.128822+00:00",
+          "event_type": "PREPROCESSING",
+          "actor_or_component": "MediaPreprocessor",
+          "description": "Extracted and validated video container streams.",
+          "device": null,
+          "input_hash": null,
+          "output_hash": null,
+          "metadata": {
+            "media_type": "video"
+          },
+          "previous_event_hash": "bff2a76c035b9f7c911b9a3ef08ce67bfcd73a26478682a0a700ba46dfd5a98c",
+          "event_signature": "ede5eadfd81b05699f83353788bc02dccc552fd2909a095f092b80f54237fb41"
+        },
+        {
+          "event_id": "EVT-0003",
+          "timestamp": "2026-09-27T15:21:14.274575+00:00",
+          "event_type": "MODEL_EXECUTION",
+          "actor_or_component": "MTCNN Face Detection & Alignment",
+          "description": "Executed neural inference using facenet-pytorch/mtcnn on CPU in 85.0ms.",
+          "device": "cpu",
+          "input_hash": null,
+          "output_hash": null,
+          "metadata": {
+            "model_id": "facenet-pytorch/mtcnn",
+            "duration_ms": 85.0,
+            "frames": 30
+          },
+          "previous_event_hash": "ede5eadfd81b05699f83353788bc02dccc552fd2909a095f092b80f54237fb41",
+          "event_signature": "3fc56073e6c707ff724e5b9426b44320ab27341d5c34cff8a0141ccb851b8f74"
+        },
+        {
+          "event_id": "EVT-0004",
+          "timestamp": "2026-09-27T15:21:14.274575+00:00",
+          "event_type": "MODEL_EXECUTION",
+          "actor_or_component": "Vision Transformer Deepfake Classifier",
+          "description": "Executed neural inference using dima806/deepfake_vs_real_image_detection on CPU in 220.0ms.",
+          "device": "cpu",
+          "input_hash": null,
+          "output_hash": null,
+          "metadata": {
+            "model_id": "dima806/deepfake_vs_real_image_detection",
+            "duration_ms": 220.0,
+            "frames": 30
+          },
+          "previous_event_hash": "3fc56073e6c707ff724e5b9426b44320ab27341d5c34cff8a0141ccb851b8f74",
+          "event_signature": "eb447ed3fb564f097f7b14a5a850ba2050b67cd1089bf7efc36fe050ffb1c48e"
+        },
+        {
+          "event_id": "EVT-0005",
+          "timestamp": "2026-09-27T15:21:14.274575+00:00",
+          "event_type": "MODEL_EXECUTION",
+          "actor_or_component": "Multi-Frame Temporal Anomaly & Aggregation Engine",
+          "description": "Executed neural inference using forensic_ai/temporal_aggregator_v1 on CPU in 25.0ms.",
+          "device": "cpu",
+          "input_hash": null,
+          "output_hash": null,
+          "metadata": {
+            "model_id": "forensic_ai/temporal_aggregator_v1",
+            "duration_ms": 25.0,
+            "temporal_risk": 0.3084
+          },
+          "previous_event_hash": "eb447ed3fb564f097f7b14a5a850ba2050b67cd1089bf7efc36fe050ffb1c48e",
+          "event_signature": "d70ade055e7feae071c8da9ead12badd2e33c7eea56aedd3f32dff7a92c7573a"
+        },
+        {
+          "event_id": "EVT-0006",
+          "timestamp": "2026-09-27T15:21:14.274575+00:00",
+          "event_type": "FUSION",
+          "actor_or_component": "MultimodalFusionEngine",
+          "description": "Synthesized evidence channels into final verdict: authentic (80.0%, risk: LOW).",
+          "device": null,
+          "input_hash": null,
+          "output_hash": null,
+          "metadata": {
+            "verdict": "authentic",
+            "confidence": 0.8,
+            "risk_level": "low",
+            "weights": {}
+          },
+          "previous_event_hash": "d70ade055e7feae071c8da9ead12badd2e33c7eea56aedd3f32dff7a92c7573a",
+          "event_signature": "5c4c6f868d86d3585fb22a4578eac347f322233235d0da4a6fc6527afd36cc87"
+        },
+        {
+          "event_id": "EVT-0007",
+          "timestamp": "2026-09-27T15:21:16.248206+00:00",
+          "event_type": "BOB_REPORTING",
+          "actor_or_component": "IBMBobService",
+          "description": "IBM Bob reporting agent generated courtroom-ready forensic dossier (ibm-bob-forensic-v1).",
+          "device": null,
+          "input_hash": null,
+          "output_hash": null,
+          "metadata": {
+            "status": "generated",
+            "model_id": "ibm-bob-forensic-v1"
+          },
+          "previous_event_hash": "5c4c6f868d86d3585fb22a4578eac347f322233235d0da4a6fc6527afd36cc87",
+          "event_signature": "dc8c9f49234750317e6c1434a1c43a592d39b2234aec4ba85030d91117dec7e3"
+        }
+      ]
+    },
+    "bob_status": "generated",
+    "bob_report": {
+      "case_summary": "Digital forensic examination of media asset '101_096.mp4' (SHA-256: 0bb352cec15ada86..., 2,363,617 bytes). Multimodal forensic assessment was conducted using primary pre-trained neural networks (MTCNN Face Detection & Alignment, Vision Transformer Deepfake Classifier, Multi-Frame Temporal Anomaly & Aggregation Engine). The automated pipeline reached an investigative verdict of Authentic with 80.0% statistical confidence and an assigned risk profile of LOW.",
+      "overall_forensic_assessment": "Comprehensive multimodal forensic examination did not detect significant generative artifacts or boundary anomalies. Biometric continuity, facial landmark stability, and acoustic frequency distributions conform to authentic natural capture profiles. Asset is assessed as authentic within the statistical detection limits of evaluated neural models (confidence: 80.0%).",
+      "verdict_statement": "AUTHENTIC \u2014 Risk Profile: LOW (80.0% Confidence)",
+      "visual_forensic_analysis": "Vision Transformer evaluation measured a synthetic probability of 30.8%, consistent with authentic photographic imagery. Attention rollout maps exhibit natural distribution across key facial features and ambient illumination gradients without generative seam artifacts. Subject localization: Full-frame scene evaluated (no isolated facial landmarks).",
+      "audio_forensic_analysis": "Wav2Vec 2.0 acoustic evaluation returned 0.0% synthetic probability (classified as authentic). Acoustic spectral distributions, vocal formant transitions, and room reverberation profiles are consistent with authentic human speech capture.",
+      "temporal_forensic_analysis": "Temporal consistency analysis observed stable inter-frame motion vectors and low landmark variance (temporal risk: 30.8%). Sequential frame embeddings show smooth biometric continuity across the sampled sequence without splicing spikes.",
+      "synchronization_analysis": "Cross-modal audio-visual synchronization analysis not applicable (single-modality media or no concurrent speech track detected).",
+      "metadata_forensic_analysis": "Container and header structure evaluated (Standard container metadata observed without conspicuous editing tags). Metadata risk index calculated at 0.02. File size of 2,363,617 bytes conforms to container specification. Cryptographic hash recorded as SHA-256: 0bb352cec15ada863b79a89566b5338a875f3d329751e2bf54ba766c4d81418b.",
+      "conflicting_evidence_analysis": "No conflicting cross-modal evidence observed. Primary detection metrics exhibit concordant directional indicators.",
+      "limitations_and_caveats": [
+        "AI model predictions provide probabilistic statistical indicators and require human digital forensic corroboration for courtroom presentation.",
+        "Lossy compression and social media re-encoding (e.g. WhatsApp, Twitter/X) attenuate high-frequency generative artifacts.",
+        "Emerging foundation diffusion models or custom fine-tuned architectures may fall outside training manifold distributions.",
+        "High JPEG compression or repeated social-media transcoding can introduce boundary artifacts resembling synthesis patterns.",
+        "Adversarial perturbations or anti-forensic post-processing may degrade neural feature extraction.",
+        "AI model probability should be corroborated by human digital forensic verification for legal admissibility."
+      ],
+      "forensic_recommendations": [
+        "Archive authenticated baseline with cryptographic SHA-256 ledger.",
+        "Monitor for downstream derivative re-encodings or unauthorized modifications.",
+        "Document forensic model versions (ViT-Base, Wav2Vec2, MTCNN) for compliance with evidence admissibility standards."
+      ],
+      "confidence_assessment": "Overall statistical confidence of 80.0% is derived from multimodal fusion weighting pre-trained neural networks (Vision Transformer: 45%, Wav2Vec2: 30%, Temporal Aggregation: 15%, Forensic Heuristics: 10%). This weighted architecture minimizes single-model false positives while maximizing sensitivity to synthetic manipulation.",
+      "chain_of_custody_notes": "Cryptographic SHA-256: 0bb352cec15ada863b79a89566b5338a875f3d329751e2bf54ba766c4d81418b. Chain of custody ledger verified with unbroken SHA-256 block-linked hashes. All model inference timestamps, parameters, and evidence generation events recorded to immutable forensic ledger.",
+      "generated_at": "2026-09-27T15:21:16.248206+00:00",
+      "model_id": "ibm-bob-forensic-v1",
+      "is_valid": true
+    },
+    "bob_message": "IBM Bob report successfully generated.",
+    "evidence": [
+      {
+        "id": "EV-TEM-001",
+        "category": "temporal",
+        "title": "Temporal Consistency & Sequence Modeling: REAL",
+        "description": "Evaluated 30 frames across the video timeline. Temporal risk score: 30.8%, variance: 0.0339, inter-frame jitter: 0.1219. Peak anomaly observed at frame #540.",
+        "severity": "low",
+        "confidence": 0.692,
+        "source": "Multi-Frame Temporal Anomaly & Aggregation Engine",
+        "timestamp": null,
+        "frame_number": null,
+        "location": null,
+        "technical_details": {
+          "temporal_risk_score": 0.3084,
+          "mean_fake_probability": 0.071,
+          "peak_fake_probability": 0.9814,
+          "variance": 0.0339,
+          "inter_frame_jitter": 0.1219,
+          "peak_frame_index": 540,
+          "suspicious_frame_indices": [
+            540
+          ],
+          "confidence": 0.6916,
+          "predicted_label": "REAL",
+          "model_name": "Multi-Frame Temporal Anomaly & Aggregation Engine",
+          "model_id": "forensic_ai/temporal_aggregator_v1",
+          "model_version": "1.0.0",
+          "fake_probability": 0.3084
+        },
+        "model_name": "Multi-Frame Temporal Anomaly & Aggregation Engine",
+        "model_id": "forensic_ai/temporal_aggregator_v1",
+        "model_version": "1.0.0"
+      }
+    ],
+    "evidence_graph": {
+      "total_nodes": 47,
+      "total_edges": 66,
+      "nodes": [
+        {
+          "id": "case_2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+          "label": "Case: 2315589e",
+          "type": "case",
+          "severity": "info",
+          "details": {
+            "case_id": "2315589e-e1a7-4ace-bc38-7a07b5476ff6"
+          }
+        },
+        {
+          "id": "media_2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+          "label": "Media: 101_096.mp4",
+          "type": "media",
+          "severity": "info",
+          "details": {
+            "type": "video",
+            "filename": "101_096.mp4"
+          }
+        },
+        {
+          "id": "model_facenet_pytorch_mtcnn",
+          "label": "Model: MTCNN Face Detection & Alignment",
+          "type": "model",
+          "severity": "info",
+          "details": {
+            "model_id": "facenet-pytorch/mtcnn",
+            "version": "2.6.0",
+            "role": "face_detector"
+          }
+        },
+        {
+          "id": "model_dima806_deepfake_vs_real_image_detection",
+          "label": "Model: Vision Transformer Deepfake Classifier",
+          "type": "model",
+          "severity": "info",
+          "details": {
+            "model_id": "dima806/deepfake_vs_real_image_detection",
+            "version": "1.0.0",
+            "role": "visual_detector"
+          }
+        },
+        {
+          "id": "model_forensic_ai_temporal_aggregator_v1",
+          "label": "Model: Multi-Frame Temporal Anomaly & Aggregation Engine",
+          "type": "model",
+          "severity": "info",
+          "details": {
+            "model_id": "forensic_ai/temporal_aggregator_v1",
+            "version": "1.0.0",
+            "role": "temporal_aggregator"
+          }
+        },
+        {
+          "id": "frame_2315589e-e1a7-4ace-bc38-7a07b5476ff6_0",
+          "label": "Frame #0",
+          "type": "frame",
+          "severity": "info",
+          "details": {
+            "frame_number": 0,
+            "timestamp": 0.0
+          }
+        },
+        {
+          "id": "face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_0_0",
+          "label": "Face #1 (F0)",
+          "type": "face",
+          "severity": "info",
+          "details": {
+            "bbox": [
+              0,
+              0,
+              100,
+              100
+            ],
+            "confidence": 0.95,
+            "frame": 0
+          }
+        },
+        {
+          "id": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_0_0_model_dima806_deepfake_vs_real_image_detection",
+          "label": "REAL (1.8%)",
+          "type": "prediction",
+          "severity": "low",
+          "details": {
+            "fake_probability": 0.0185,
+            "label": "REAL"
+          }
+        },
+        {
+          "id": "expl_pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_0_0_model_dima806_deepfake_vs_real_image_detection",
+          "label": "Attention Heatmap",
+          "type": "explanation",
+          "severity": "info",
+          "details": {
+            "url": "/explanations/2315589e-e1a7-4ace-bc38-7a07b5476ff6/frame_0000_gradcam.jpg",
+            "description": "Frame Attention Map"
+          }
+        },
+        {
+          "id": "frame_2315589e-e1a7-4ace-bc38-7a07b5476ff6_30",
+          "label": "Frame #30",
+          "type": "frame",
+          "severity": "info",
+          "details": {
+            "frame_number": 30,
+            "timestamp": 1.0
+          }
+        },
+        {
+          "id": "face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_30_0",
+          "label": "Face #1 (F30)",
+          "type": "face",
+          "severity": "info",
+          "details": {
+            "bbox": [
+              0,
+              0,
+              100,
+              100
+            ],
+            "confidence": 0.95,
+            "frame": 30
+          }
+        },
+        {
+          "id": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_30_0_model_dima806_deepfake_vs_real_image_detection",
+          "label": "REAL (0.7%)",
+          "type": "prediction",
+          "severity": "low",
+          "details": {
+            "fake_probability": 0.0073,
+            "label": "REAL"
+          }
+        },
+        {
+          "id": "expl_pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_30_0_model_dima806_deepfake_vs_real_image_detection",
+          "label": "Attention Heatmap",
+          "type": "explanation",
+          "severity": "info",
+          "details": {
+            "url": "/explanations/2315589e-e1a7-4ace-bc38-7a07b5476ff6/frame_0030_gradcam.jpg",
+            "description": "Frame Attention Map"
+          }
+        },
+        {
+          "id": "frame_2315589e-e1a7-4ace-bc38-7a07b5476ff6_60",
+          "label": "Frame #60",
+          "type": "frame",
+          "severity": "info",
+          "details": {
+            "frame_number": 60,
+            "timestamp": 2.0
+          }
+        },
+        {
+          "id": "face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_60_0",
+          "label": "Face #1 (F60)",
+          "type": "face",
+          "severity": "info",
+          "details": {
+            "bbox": [
+              0,
+              0,
+              100,
+              100
+            ],
+            "confidence": 0.95,
+            "frame": 60
+          }
+        },
+        {
+          "id": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_60_0_model_dima806_deepfake_vs_real_image_detection",
+          "label": "REAL (1.4%)",
+          "type": "prediction",
+          "severity": "low",
+          "details": {
+            "fake_probability": 0.0142,
+            "label": "REAL"
+          }
+        },
+        {
+          "id": "expl_pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_60_0_model_dima806_deepfake_vs_real_image_detection",
+          "label": "Attention Heatmap",
+          "type": "explanation",
+          "severity": "info",
+          "details": {
+            "url": "/explanations/2315589e-e1a7-4ace-bc38-7a07b5476ff6/frame_0060_gradcam.jpg",
+            "description": "Frame Attention Map"
+          }
+        },
+        {
+          "id": "frame_2315589e-e1a7-4ace-bc38-7a07b5476ff6_90",
+          "label": "Frame #90",
+          "type": "frame",
+          "severity": "info",
+          "details": {
+            "frame_number": 90,
+            "timestamp": 3.0
+          }
+        },
+        {
+          "id": "face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_90_0",
+          "label": "Face #1 (F90)",
+          "type": "face",
+          "severity": "info",
+          "details": {
+            "bbox": [
+              0,
+              0,
+              100,
+              100
+            ],
+            "confidence": 0.95,
+            "frame": 90
+          }
+        },
+        {
+          "id": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_90_0_model_dima806_deepfake_vs_real_image_detection",
+          "label": "REAL (1.7%)",
+          "type": "prediction",
+          "severity": "low",
+          "details": {
+            "fake_probability": 0.0172,
+            "label": "REAL"
+          }
+        },
+        {
+          "id": "expl_pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_90_0_model_dima806_deepfake_vs_real_image_detection",
+          "label": "Attention Heatmap",
+          "type": "explanation",
+          "severity": "info",
+          "details": {
+            "url": "/explanations/2315589e-e1a7-4ace-bc38-7a07b5476ff6/frame_0090_gradcam.jpg",
+            "description": "Frame Attention Map"
+          }
+        },
+        {
+          "id": "frame_2315589e-e1a7-4ace-bc38-7a07b5476ff6_150",
+          "label": "Frame #150",
+          "type": "frame",
+          "severity": "info",
+          "details": {
+            "frame_number": 150,
+            "timestamp": 5.0
+          }
+        },
+        {
+          "id": "face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_150_0",
+          "label": "Face #1 (F150)",
+          "type": "face",
+          "severity": "info",
+          "details": {
+            "bbox": [
+              0,
+              0,
+              100,
+              100
+            ],
+            "confidence": 0.95,
+            "frame": 150
+          }
+        },
+        {
+          "id": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_150_0_model_dima806_deepfake_vs_real_image_detection",
+          "label": "REAL (2.2%)",
+          "type": "prediction",
+          "severity": "low",
+          "details": {
+            "fake_probability": 0.0219,
+            "label": "REAL"
+          }
+        },
+        {
+          "id": "expl_pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_150_0_model_dima806_deepfake_vs_real_image_detection",
+          "label": "Attention Heatmap",
+          "type": "explanation",
+          "severity": "info",
+          "details": {
+            "url": "/explanations/2315589e-e1a7-4ace-bc38-7a07b5476ff6/frame_0150_gradcam.jpg",
+            "description": "Frame Attention Map"
+          }
+        },
+        {
+          "id": "frame_2315589e-e1a7-4ace-bc38-7a07b5476ff6_180",
+          "label": "Frame #180",
+          "type": "frame",
+          "severity": "info",
+          "details": {
+            "frame_number": 180,
+            "timestamp": 6.0
+          }
+        },
+        {
+          "id": "face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_180_0",
+          "label": "Face #1 (F180)",
+          "type": "face",
+          "severity": "info",
+          "details": {
+            "bbox": [
+              0,
+              0,
+              100,
+              100
+            ],
+            "confidence": 0.95,
+            "frame": 180
+          }
+        },
+        {
+          "id": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_180_0_model_dima806_deepfake_vs_real_image_detection",
+          "label": "REAL (3.4%)",
+          "type": "prediction",
+          "severity": "low",
+          "details": {
+            "fake_probability": 0.0343,
+            "label": "REAL"
+          }
+        },
+        {
+          "id": "expl_pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_180_0_model_dima806_deepfake_vs_real_image_detection",
+          "label": "Attention Heatmap",
+          "type": "explanation",
+          "severity": "info",
+          "details": {
+            "url": "/explanations/2315589e-e1a7-4ace-bc38-7a07b5476ff6/frame_0180_gradcam.jpg",
+            "description": "Frame Attention Map"
+          }
+        },
+        {
+          "id": "frame_2315589e-e1a7-4ace-bc38-7a07b5476ff6_210",
+          "label": "Frame #210",
+          "type": "frame",
+          "severity": "info",
+          "details": {
+            "frame_number": 210,
+            "timestamp": 7.0
+          }
+        },
+        {
+          "id": "face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_210_0",
+          "label": "Face #1 (F210)",
+          "type": "face",
+          "severity": "info",
+          "details": {
+            "bbox": [
+              0,
+              0,
+              100,
+              100
+            ],
+            "confidence": 0.95,
+            "frame": 210
+          }
+        },
+        {
+          "id": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_210_0_model_dima806_deepfake_vs_real_image_detection",
+          "label": "REAL (1.4%)",
+          "type": "prediction",
+          "severity": "low",
+          "details": {
+            "fake_probability": 0.0139,
+            "label": "REAL"
+          }
+        },
+        {
+          "id": "expl_pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_210_0_model_dima806_deepfake_vs_real_image_detection",
+          "label": "Attention Heatmap",
+          "type": "explanation",
+          "severity": "info",
+          "details": {
+            "url": "/explanations/2315589e-e1a7-4ace-bc38-7a07b5476ff6/frame_0210_gradcam.jpg",
+            "description": "Frame Attention Map"
+          }
+        },
+        {
+          "id": "frame_2315589e-e1a7-4ace-bc38-7a07b5476ff6_270",
+          "label": "Frame #270",
+          "type": "frame",
+          "severity": "info",
+          "details": {
+            "frame_number": 270,
+            "timestamp": 9.0
+          }
+        },
+        {
+          "id": "face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_270_0",
+          "label": "Face #1 (F270)",
+          "type": "face",
+          "severity": "info",
+          "details": {
+            "bbox": [
+              0,
+              0,
+              100,
+              100
+            ],
+            "confidence": 0.95,
+            "frame": 270
+          }
+        },
+        {
+          "id": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_270_0_model_dima806_deepfake_vs_real_image_detection",
+          "label": "REAL (0.9%)",
+          "type": "prediction",
+          "severity": "low",
+          "details": {
+            "fake_probability": 0.0092,
+            "label": "REAL"
+          }
+        },
+        {
+          "id": "expl_pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_270_0_model_dima806_deepfake_vs_real_image_detection",
+          "label": "Attention Heatmap",
+          "type": "explanation",
+          "severity": "info",
+          "details": {
+            "url": "/explanations/2315589e-e1a7-4ace-bc38-7a07b5476ff6/frame_0270_gradcam.jpg",
+            "description": "Frame Attention Map"
+          }
+        },
+        {
+          "id": "frame_2315589e-e1a7-4ace-bc38-7a07b5476ff6_300",
+          "label": "Frame #300",
+          "type": "frame",
+          "severity": "info",
+          "details": {
+            "frame_number": 300,
+            "timestamp": 10.0
+          }
+        },
+        {
+          "id": "face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_300_0",
+          "label": "Face #1 (F300)",
+          "type": "face",
+          "severity": "info",
+          "details": {
+            "bbox": [
+              0,
+              0,
+              100,
+              100
+            ],
+            "confidence": 0.95,
+            "frame": 300
+          }
+        },
+        {
+          "id": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_300_0_model_dima806_deepfake_vs_real_image_detection",
+          "label": "REAL (1.4%)",
+          "type": "prediction",
+          "severity": "low",
+          "details": {
+            "fake_probability": 0.0143,
+            "label": "REAL"
+          }
+        },
+        {
+          "id": "expl_pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_300_0_model_dima806_deepfake_vs_real_image_detection",
+          "label": "Attention Heatmap",
+          "type": "explanation",
+          "severity": "info",
+          "details": {
+            "url": "/explanations/2315589e-e1a7-4ace-bc38-7a07b5476ff6/frame_0300_gradcam.jpg",
+            "description": "Frame Attention Map"
+          }
+        },
+        {
+          "id": "frame_2315589e-e1a7-4ace-bc38-7a07b5476ff6_330",
+          "label": "Frame #330",
+          "type": "frame",
+          "severity": "info",
+          "details": {
+            "frame_number": 330,
+            "timestamp": 11.0
+          }
+        },
+        {
+          "id": "face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_330_0",
+          "label": "Face #1 (F330)",
+          "type": "face",
+          "severity": "info",
+          "details": {
+            "bbox": [
+              0,
+              0,
+              100,
+              100
+            ],
+            "confidence": 0.95,
+            "frame": 330
+          }
+        },
+        {
+          "id": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_330_0_model_dima806_deepfake_vs_real_image_detection",
+          "label": "REAL (1.1%)",
+          "type": "prediction",
+          "severity": "low",
+          "details": {
+            "fake_probability": 0.0115,
+            "label": "REAL"
+          }
+        },
+        {
+          "id": "expl_pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_330_0_model_dima806_deepfake_vs_real_image_detection",
+          "label": "Attention Heatmap",
+          "type": "explanation",
+          "severity": "info",
+          "details": {
+            "url": "/explanations/2315589e-e1a7-4ace-bc38-7a07b5476ff6/frame_0330_gradcam.jpg",
+            "description": "Frame Attention Map"
+          }
+        },
+        {
+          "id": "ev_EV-TEM-001",
+          "label": "Temporal Consistency & Sequence Modeling: REAL",
+          "type": "evidence",
+          "severity": "low",
+          "details": {
+            "id": "EV-TEM-001",
+            "category": "temporal",
+            "confidence": 0.692,
+            "description": "Evaluated 30 frames across the video timeline. Temporal risk score: 30.8%, variance: 0.0339, inter-frame jitter: 0.1219. Peak anomaly observed at frame #540.",
+            "model_name": "Multi-Frame Temporal Anomaly & Aggregation Engine"
+          }
+        },
+        {
+          "id": "conclusion_2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+          "label": "Verdict: Authentic (80%)",
+          "type": "conclusion",
+          "severity": "low",
+          "details": {
+            "verdict": "authentic",
+            "confidence": 0.8,
+            "risk_level": "low"
+          }
+        }
+      ],
+      "edges": [
+        {
+          "source": "case_2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+          "target": "media_2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+          "relation": "contains_media"
+        },
+        {
+          "source": "case_2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+          "target": "model_facenet_pytorch_mtcnn",
+          "relation": "utilizes_model"
+        },
+        {
+          "source": "case_2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+          "target": "model_dima806_deepfake_vs_real_image_detection",
+          "relation": "utilizes_model"
+        },
+        {
+          "source": "case_2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+          "target": "model_forensic_ai_temporal_aggregator_v1",
+          "relation": "utilizes_model"
+        },
+        {
+          "source": "media_2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+          "target": "frame_2315589e-e1a7-4ace-bc38-7a07b5476ff6_0",
+          "relation": "has_frame"
+        },
+        {
+          "source": "media_2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+          "target": "frame_2315589e-e1a7-4ace-bc38-7a07b5476ff6_30",
+          "relation": "has_frame"
+        },
+        {
+          "source": "media_2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+          "target": "frame_2315589e-e1a7-4ace-bc38-7a07b5476ff6_60",
+          "relation": "has_frame"
+        },
+        {
+          "source": "media_2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+          "target": "frame_2315589e-e1a7-4ace-bc38-7a07b5476ff6_90",
+          "relation": "has_frame"
+        },
+        {
+          "source": "media_2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+          "target": "frame_2315589e-e1a7-4ace-bc38-7a07b5476ff6_150",
+          "relation": "has_frame"
+        },
+        {
+          "source": "media_2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+          "target": "frame_2315589e-e1a7-4ace-bc38-7a07b5476ff6_180",
+          "relation": "has_frame"
+        },
+        {
+          "source": "media_2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+          "target": "frame_2315589e-e1a7-4ace-bc38-7a07b5476ff6_210",
+          "relation": "has_frame"
+        },
+        {
+          "source": "media_2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+          "target": "frame_2315589e-e1a7-4ace-bc38-7a07b5476ff6_270",
+          "relation": "has_frame"
+        },
+        {
+          "source": "media_2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+          "target": "frame_2315589e-e1a7-4ace-bc38-7a07b5476ff6_300",
+          "relation": "has_frame"
+        },
+        {
+          "source": "media_2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+          "target": "frame_2315589e-e1a7-4ace-bc38-7a07b5476ff6_330",
+          "relation": "has_frame"
+        },
+        {
+          "source": "media_2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+          "target": "ev_EV-TEM-001",
+          "relation": "supports_evidence"
+        },
+        {
+          "source": "model_dima806_deepfake_vs_real_image_detection",
+          "target": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_0_0_model_dima806_deepfake_vs_real_image_detection",
+          "relation": "inferred_by"
+        },
+        {
+          "source": "model_dima806_deepfake_vs_real_image_detection",
+          "target": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_30_0_model_dima806_deepfake_vs_real_image_detection",
+          "relation": "inferred_by"
+        },
+        {
+          "source": "model_dima806_deepfake_vs_real_image_detection",
+          "target": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_60_0_model_dima806_deepfake_vs_real_image_detection",
+          "relation": "inferred_by"
+        },
+        {
+          "source": "model_dima806_deepfake_vs_real_image_detection",
+          "target": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_90_0_model_dima806_deepfake_vs_real_image_detection",
+          "relation": "inferred_by"
+        },
+        {
+          "source": "model_dima806_deepfake_vs_real_image_detection",
+          "target": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_150_0_model_dima806_deepfake_vs_real_image_detection",
+          "relation": "inferred_by"
+        },
+        {
+          "source": "model_dima806_deepfake_vs_real_image_detection",
+          "target": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_180_0_model_dima806_deepfake_vs_real_image_detection",
+          "relation": "inferred_by"
+        },
+        {
+          "source": "model_dima806_deepfake_vs_real_image_detection",
+          "target": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_210_0_model_dima806_deepfake_vs_real_image_detection",
+          "relation": "inferred_by"
+        },
+        {
+          "source": "model_dima806_deepfake_vs_real_image_detection",
+          "target": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_270_0_model_dima806_deepfake_vs_real_image_detection",
+          "relation": "inferred_by"
+        },
+        {
+          "source": "model_dima806_deepfake_vs_real_image_detection",
+          "target": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_300_0_model_dima806_deepfake_vs_real_image_detection",
+          "relation": "inferred_by"
+        },
+        {
+          "source": "model_dima806_deepfake_vs_real_image_detection",
+          "target": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_330_0_model_dima806_deepfake_vs_real_image_detection",
+          "relation": "inferred_by"
+        },
+        {
+          "source": "frame_2315589e-e1a7-4ace-bc38-7a07b5476ff6_0",
+          "target": "face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_0_0",
+          "relation": "detects_face"
+        },
+        {
+          "source": "face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_0_0",
+          "target": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_0_0_model_dima806_deepfake_vs_real_image_detection",
+          "relation": "evaluated_as"
+        },
+        {
+          "source": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_0_0_model_dima806_deepfake_vs_real_image_detection",
+          "target": "expl_pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_0_0_model_dima806_deepfake_vs_real_image_detection",
+          "relation": "explained_by"
+        },
+        {
+          "source": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_0_0_model_dima806_deepfake_vs_real_image_detection",
+          "target": "conclusion_2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+          "relation": "leads_to"
+        },
+        {
+          "source": "frame_2315589e-e1a7-4ace-bc38-7a07b5476ff6_30",
+          "target": "face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_30_0",
+          "relation": "detects_face"
+        },
+        {
+          "source": "face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_30_0",
+          "target": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_30_0_model_dima806_deepfake_vs_real_image_detection",
+          "relation": "evaluated_as"
+        },
+        {
+          "source": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_30_0_model_dima806_deepfake_vs_real_image_detection",
+          "target": "expl_pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_30_0_model_dima806_deepfake_vs_real_image_detection",
+          "relation": "explained_by"
+        },
+        {
+          "source": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_30_0_model_dima806_deepfake_vs_real_image_detection",
+          "target": "conclusion_2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+          "relation": "leads_to"
+        },
+        {
+          "source": "frame_2315589e-e1a7-4ace-bc38-7a07b5476ff6_60",
+          "target": "face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_60_0",
+          "relation": "detects_face"
+        },
+        {
+          "source": "face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_60_0",
+          "target": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_60_0_model_dima806_deepfake_vs_real_image_detection",
+          "relation": "evaluated_as"
+        },
+        {
+          "source": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_60_0_model_dima806_deepfake_vs_real_image_detection",
+          "target": "expl_pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_60_0_model_dima806_deepfake_vs_real_image_detection",
+          "relation": "explained_by"
+        },
+        {
+          "source": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_60_0_model_dima806_deepfake_vs_real_image_detection",
+          "target": "conclusion_2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+          "relation": "leads_to"
+        },
+        {
+          "source": "frame_2315589e-e1a7-4ace-bc38-7a07b5476ff6_90",
+          "target": "face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_90_0",
+          "relation": "detects_face"
+        },
+        {
+          "source": "face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_90_0",
+          "target": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_90_0_model_dima806_deepfake_vs_real_image_detection",
+          "relation": "evaluated_as"
+        },
+        {
+          "source": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_90_0_model_dima806_deepfake_vs_real_image_detection",
+          "target": "expl_pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_90_0_model_dima806_deepfake_vs_real_image_detection",
+          "relation": "explained_by"
+        },
+        {
+          "source": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_90_0_model_dima806_deepfake_vs_real_image_detection",
+          "target": "conclusion_2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+          "relation": "leads_to"
+        },
+        {
+          "source": "frame_2315589e-e1a7-4ace-bc38-7a07b5476ff6_150",
+          "target": "face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_150_0",
+          "relation": "detects_face"
+        },
+        {
+          "source": "face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_150_0",
+          "target": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_150_0_model_dima806_deepfake_vs_real_image_detection",
+          "relation": "evaluated_as"
+        },
+        {
+          "source": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_150_0_model_dima806_deepfake_vs_real_image_detection",
+          "target": "expl_pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_150_0_model_dima806_deepfake_vs_real_image_detection",
+          "relation": "explained_by"
+        },
+        {
+          "source": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_150_0_model_dima806_deepfake_vs_real_image_detection",
+          "target": "conclusion_2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+          "relation": "leads_to"
+        },
+        {
+          "source": "frame_2315589e-e1a7-4ace-bc38-7a07b5476ff6_180",
+          "target": "face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_180_0",
+          "relation": "detects_face"
+        },
+        {
+          "source": "face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_180_0",
+          "target": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_180_0_model_dima806_deepfake_vs_real_image_detection",
+          "relation": "evaluated_as"
+        },
+        {
+          "source": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_180_0_model_dima806_deepfake_vs_real_image_detection",
+          "target": "expl_pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_180_0_model_dima806_deepfake_vs_real_image_detection",
+          "relation": "explained_by"
+        },
+        {
+          "source": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_180_0_model_dima806_deepfake_vs_real_image_detection",
+          "target": "conclusion_2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+          "relation": "leads_to"
+        },
+        {
+          "source": "frame_2315589e-e1a7-4ace-bc38-7a07b5476ff6_210",
+          "target": "face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_210_0",
+          "relation": "detects_face"
+        },
+        {
+          "source": "face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_210_0",
+          "target": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_210_0_model_dima806_deepfake_vs_real_image_detection",
+          "relation": "evaluated_as"
+        },
+        {
+          "source": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_210_0_model_dima806_deepfake_vs_real_image_detection",
+          "target": "expl_pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_210_0_model_dima806_deepfake_vs_real_image_detection",
+          "relation": "explained_by"
+        },
+        {
+          "source": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_210_0_model_dima806_deepfake_vs_real_image_detection",
+          "target": "conclusion_2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+          "relation": "leads_to"
+        },
+        {
+          "source": "frame_2315589e-e1a7-4ace-bc38-7a07b5476ff6_270",
+          "target": "face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_270_0",
+          "relation": "detects_face"
+        },
+        {
+          "source": "face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_270_0",
+          "target": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_270_0_model_dima806_deepfake_vs_real_image_detection",
+          "relation": "evaluated_as"
+        },
+        {
+          "source": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_270_0_model_dima806_deepfake_vs_real_image_detection",
+          "target": "expl_pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_270_0_model_dima806_deepfake_vs_real_image_detection",
+          "relation": "explained_by"
+        },
+        {
+          "source": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_270_0_model_dima806_deepfake_vs_real_image_detection",
+          "target": "conclusion_2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+          "relation": "leads_to"
+        },
+        {
+          "source": "frame_2315589e-e1a7-4ace-bc38-7a07b5476ff6_300",
+          "target": "face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_300_0",
+          "relation": "detects_face"
+        },
+        {
+          "source": "face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_300_0",
+          "target": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_300_0_model_dima806_deepfake_vs_real_image_detection",
+          "relation": "evaluated_as"
+        },
+        {
+          "source": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_300_0_model_dima806_deepfake_vs_real_image_detection",
+          "target": "expl_pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_300_0_model_dima806_deepfake_vs_real_image_detection",
+          "relation": "explained_by"
+        },
+        {
+          "source": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_300_0_model_dima806_deepfake_vs_real_image_detection",
+          "target": "conclusion_2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+          "relation": "leads_to"
+        },
+        {
+          "source": "frame_2315589e-e1a7-4ace-bc38-7a07b5476ff6_330",
+          "target": "face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_330_0",
+          "relation": "detects_face"
+        },
+        {
+          "source": "face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_330_0",
+          "target": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_330_0_model_dima806_deepfake_vs_real_image_detection",
+          "relation": "evaluated_as"
+        },
+        {
+          "source": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_330_0_model_dima806_deepfake_vs_real_image_detection",
+          "target": "expl_pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_330_0_model_dima806_deepfake_vs_real_image_detection",
+          "relation": "explained_by"
+        },
+        {
+          "source": "pred_face_2315589e-e1a7-4ace-bc38-7a07b5476ff6_330_0_model_dima806_deepfake_vs_real_image_detection",
+          "target": "conclusion_2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+          "relation": "leads_to"
+        },
+        {
+          "source": "ev_EV-TEM-001",
+          "target": "conclusion_2315589e-e1a7-4ace-bc38-7a07b5476ff6",
+          "relation": "leads_to"
+        }
+      ]
+    },
+    "bob_explanation": "Temporal aggregation across 30 video frames identified a temporal risk score of 30.8% (variance: 0.034, jitter: 0.122). Peak manipulation observed at frame #540 (18.0s).",
+    "limitations": [
+      "High JPEG compression or repeated social-media transcoding can introduce boundary artifacts resembling synthesis patterns.",
+      "Adversarial perturbations or anti-forensic post-processing may degrade neural feature extraction.",
+      "AI model probability should be corroborated by human digital forensic verification for legal admissibility."
+    ],
+    "model_status": "loaded",
+    "models_provenance": {
+      "device_info": {
+        "device_type": "cpu",
+        "cuda_available": false,
+        "configured_target": "auto",
+        "resolved_target": "cpu",
+        "gpu_name": null,
+        "gpu_count": 0,
+        "vram_allocated_mb": 0.0,
+        "vram_reserved_mb": 0.0
+      },
+      "models": {
+        "face_detector": {
+          "name": "MTCNN Face Detection & Alignment",
+          "model_id": "facenet-pytorch/mtcnn",
+          "loaded": true,
+          "device": "cpu",
+          "error": null,
+          "metadata": {
+            "model_id": "facenet-pytorch/mtcnn",
+            "name": "MTCNN Face Detection & Alignment",
+            "role": "face_detector",
+            "architecture": "Multi-task Cascaded Convolutional Networks (P-Net, R-Net, O-Net)",
+            "framework": "PyTorch (facenet-pytorch)",
+            "source": "https://github.com/timesler/facenet-pytorch",
+            "license": "MIT",
+            "version": "2.6.0",
+            "input_shape": "RGB Image (Variable)",
+            "classes": {
+              "0": "Non-Face",
+              "1": "Face"
+            },
+            "description": "Cascade network detecting facial bounding boxes and landmarks for crop alignment.",
+            "paper_citation": "Zhang et al., Joint Face Detection and Alignment using Multi-task Cascaded Convolutional Networks, IEEE SPL 2016"
+          }
+        },
+        "visual_detector": {
+          "name": "Vision Transformer Deepfake Classifier",
+          "model_id": "dima806/deepfake_vs_real_image_detection",
+          "loaded": true,
+          "device": "cpu",
+          "error": null,
+          "metadata": {
+            "model_id": "dima806/deepfake_vs_real_image_detection",
+            "name": "Vision Transformer Deepfake Classifier",
+            "role": "visual_detector",
+            "architecture": "google/vit-base-patch16-224 fine-tuned on deepfake datasets",
+            "framework": "PyTorch / Hugging Face Transformers",
+            "source": "https://huggingface.co/dima806/deepfake_vs_real_image_detection",
+            "license": "Apache 2.0",
+            "version": "1.0.0",
+            "input_shape": "3x224x224 RGB Normalized",
+            "classes": {
+              "0": "Real",
+              "1": "Fake"
+            },
+            "description": "Pretrained Vision Transformer classifying genuine vs deepfake face crops with self-attention maps.",
+            "paper_citation": "Dosovitskiy et al., An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale, ICLR 2021"
+          }
+        },
+        "audio_detector": {
+          "name": "Wav2Vec2 Audio Deepfake & Spoof Detector",
+          "model_id": "MelodyMachine/Deepfake-audio-detection",
+          "loaded": true,
+          "device": "cpu",
+          "error": null,
+          "metadata": {
+            "model_id": "MelodyMachine/Deepfake-audio-detection",
+            "name": "Wav2Vec2 Audio Deepfake & Spoof Detector",
+            "role": "audio_detector",
+            "architecture": "facebook/wav2vec2-base fine-tuned on synthetic speech datasets",
+            "framework": "PyTorch / Hugging Face Transformers",
+            "source": "https://huggingface.co/MelodyMachine/Deepfake-audio-detection",
+            "license": "Apache 2.0",
+            "version": "1.0.0",
+            "input_shape": "1D Audio Waveform (16,000 Hz mono)",
+            "classes": {
+              "0": "Fake",
+              "1": "Real"
+            },
+            "description": "Wav2Vec 2.0 neural acoustic model detecting synthesized, cloned, or spliced audio speech.",
+            "paper_citation": "Baevski et al., wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations, NeurIPS 2020"
+          }
+        },
+        "temporal_detector": {
+          "name": "Multi-Frame Temporal Anomaly & Aggregation Engine",
+          "model_id": "forensic_ai/temporal_aggregator_v1",
+          "loaded": true,
+          "device": "cpu",
+          "error": null,
+          "metadata": {
+            "model_id": "forensic_ai/temporal_aggregator_v1",
+            "name": "Multi-Frame Temporal Anomaly & Aggregation Engine",
+            "role": "temporal_detector",
+            "architecture": "Statistical Multi-Frame Sequence Modeling & Peak Anomaly",
+            "framework": "PyTorch / NumPy",
+            "source": "DeepFake ForensicAI In-House Engine",
+            "license": "MIT",
+            "version": "1.0.0",
+            "input_shape": "Sequence of Frame Predictions [T, 2]",
+            "classes": {
+              "0": "Consistent",
+              "1": "Temporal Anomaly"
+            },
+            "description": "Evaluates inter-frame prediction variance, flickering, spike anomalies, and temporal continuity across video frames.",
+            "paper_citation": "Agarwal et al., Protecting World Leaders Against Deep Fakes, CVPRW 2019"
+          }
+        }
+      }
+    },
+    "explanations": {
+      "narrative": "Temporal aggregation across 30 video frames identified a temporal risk score of 30.8% (variance: 0.034, jitter: 0.122). Peak manipulation observed at frame #540 (18.0s).",
+      "top_suspicious_frames": [
+        {
+          "rank": 1,
+          "frame_index": 540,
+          "timestamp_sec": 18.0,
+          "fake_probability": 0.9814,
+          "real_probability": 0.0186,
+          "confidence": 0.9814,
+          "explanation_image_url": "/explanations/2315589e-e1a7-4ace-bc38-7a07b5476ff6/frame_0540_gradcam.jpg",
+          "original_frame_url": "/frames/2315589e-e1a7-4ace-bc38-7a07b5476ff6/frame_0540.jpg",
+          "faces_detected": 1,
+          "finding_summary": "High-confidence generative facial anomaly detected in frame #540 (probability: 0.98)."
+        },
+        {
+          "rank": 2,
+          "frame_index": 690,
+          "timestamp_sec": 23.0,
+          "fake_probability": 0.3354,
+          "real_probability": 0.6646,
+          "confidence": 0.6646,
+          "explanation_image_url": "/explanations/2315589e-e1a7-4ace-bc38-7a07b5476ff6/frame_0690_gradcam.jpg",
+          "original_frame_url": "/frames/2315589e-e1a7-4ace-bc38-7a07b5476ff6/frame_0690.jpg",
+          "faces_detected": 1,
+          "finding_summary": "Frame #690 exhibits characteristics consistent with genuine media (probability: 0.34)."
+        },
+        {
+          "rank": 3,
+          "frame_index": 600,
+          "timestamp_sec": 20.0,
+          "fake_probability": 0.2614,
+          "real_probability": 0.7386,
+          "confidence": 0.7386,
+          "explanation_image_url": "/explanations/2315589e-e1a7-4ace-bc38-7a07b5476ff6/frame_0600_gradcam.jpg",
+          "original_frame_url": "/frames/2315589e-e1a7-4ace-bc38-7a07b5476ff6/frame_0600.jpg",
+          "faces_detected": 1,
+          "finding_summary": "Frame #600 exhibits characteristics consistent with genuine media (probability: 0.26)."
+        }
+      ]
+    },
+    "top_suspicious_frames": [
+      {
+        "rank": 1,
+        "frame_index": 540,
+        "timestamp_sec": 18.0,
+        "fake_probability": 0.9814,
+        "real_probability": 0.0186,
+        "confidence": 0.9814,
+        "explanation_image_url": "/explanations/2315589e-e1a7-4ace-bc38-7a07b5476ff6/frame_0540_gradcam.jpg",
+        "original_frame_url": "/frames/2315589e-e1a7-4ace-bc38-7a07b5476ff6/frame_0540.jpg",
+        "faces_detected": 1,
+        "finding_summary": "High-confidence generative facial anomaly detected in frame #540 (probability: 0.98)."
+      },
+      {
+        "rank": 2,
+        "frame_index": 690,
+        "timestamp_sec": 23.0,
+        "fake_probability": 0.3354,
+        "real_probability": 0.6646,
+        "confidence": 0.6646,
+        "explanation_image_url": "/explanations/2315589e-e1a7-4ace-bc38-7a07b5476ff6/frame_0690_gradcam.jpg",
+        "original_frame_url": "/frames/2315589e-e1a7-4ace-bc38-7a07b5476ff6/frame_0690.jpg",
+        "faces_detected": 1,
+        "finding_summary": "Frame #690 exhibits characteristics consistent with genuine media (probability: 0.34)."
+      },
+      {
+        "rank": 3,
+        "frame_index": 600,
+        "timestamp_sec": 20.0,
+        "fake_probability": 0.2614,
+        "real_probability": 0.7386,
+        "confidence": 0.7386,
+        "explanation_image_url": "/explanations/2315589e-e1a7-4ace-bc38-7a07b5476ff6/frame_0600_gradcam.jpg",
+        "original_frame_url": "/frames/2315589e-e1a7-4ace-bc38-7a07b5476ff6/frame_0600.jpg",
+        "faces_detected": 1,
+        "finding_summary": "Frame #600 exhibits characteristics consistent with genuine media (probability: 0.26)."
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "id": "EV-TEM-001",
+      "category": "temporal",
+      "title": "Temporal Consistency & Sequence Modeling: REAL",
+      "description": "Evaluated 30 frames across the video timeline. Temporal risk score: 30.8%, variance: 0.0339, inter-frame jitter: 0.1219. Peak anomaly observed at frame #540.",
+      "severity": "low",
+      "confidence": 0.692,
+      "source": "Multi-Frame Temporal Anomaly & Aggregation Engine",
+      "timestamp": null,
+      "frame_number": null,
+      "location": null,
+      "technical_details": {
+        "temporal_risk_score": 0.3084,
+        "mean_fake_probability": 0.071,
+        "peak_fake_probability": 0.9814,
+        "variance": 0.0339,
+        "inter_frame_jitter": 0.1219,
+        "peak_frame_index": 540,
+        "suspicious_frame_indices": [
+          540
+        ],
+        "confidence": 0.6916,
+        "predicted_label": "REAL",
+        "model_name": "Multi-Frame Temporal Anomaly & Aggregation Engine",
+        "model_id": "forensic_ai/temporal_aggregator_v1",
+        "model_version": "1.0.0",
+        "fake_probability": 0.3084
+      },
+      "model_name": "Multi-Frame Temporal Anomaly & Aggregation Engine",
+      "model_id": "forensic_ai/temporal_aggregator_v1",
+      "model_version": "1.0.0"
+    }
+  ],
+  "sync_analysis": null,
+  "chain_of_custody": null,
+  "bob_status": "unavailable",
+  "bob_report": null,
+  "bob_message": null,
+  "error_message": null
+}

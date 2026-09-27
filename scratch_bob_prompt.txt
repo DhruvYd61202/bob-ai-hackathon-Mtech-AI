@@ -1,0 +1,18 @@
+11. BOB forensic assistant
+Verify BOB uses actual evidence.
+- health endpoint works
+- model status endpoint works
+FULL AI DEEPFAKE FORENSICAI + IBM BOB LOAD-BEARING AGENT
+backend engineer, frontend engineer, testing engineer, and IBM Bob integration
+Do NOT make IBM Bob a name-only/static component.
+Do NOT fabricate IBM Bob API endpoints.
+evidence extraction, then sends the structured forensic evidence to IBM Bob
+through a real configurable Bob integration so Bob produces an investigation
+11. IBM Bob forensic reporting agent
+IBM BOB
+IBM Bob is therefore a genuine reasoning/reporting component.
+- a mock API in production
+Use real IBM Bob integration.
+5. IBM Bob integration location
+6. Exact location where I put my IBM Bob API key
+11. Bob status-check command

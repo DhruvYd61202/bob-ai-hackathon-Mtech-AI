@@ -21,7 +21,6 @@ CASE_DIR=data/cases
 REPORT_DIR=data/reports
 MODEL_DIR=data/models
 DEVICE=auto
-OPENAI_API_KEY=
 ```
 
 Additionally, configure IBM Bob inside `src/backend/app/bob/config.py`:

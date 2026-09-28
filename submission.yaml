@@ -3,12 +3,13 @@ team:
   track: "Cyber Forensics"
   lead:
     name: "Dhruv Yadav"
-    email: "dhruvyadav612.email@example.com"
+    email: "dhruvyadav612@gmail.com"
   members:
     - name: "Harshil Vashita"
-      email: "member1@example.com"
+      email: "harshilvashita01@gmail.com"
     - name: "Rishabh Narayan"
-      email: "member2@example.com"
+      email: "nrishabh138@gmail.com"
+
 
 submission:
   title: "DeepFake ForensicAI"
